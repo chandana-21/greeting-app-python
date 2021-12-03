@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <title>Say Hello! </title>
 </head>
 <body>
-    <img src="templates/logo.png" alt="Say Hello!">
+    <img src="https://user-images.githubusercontent.com/79861528/144549452-cf4b56ff-fb43-4fc9-8049-9ad152119df5.png" alt="Say Hello!">
     <br>
     <form action="greet" method="post">
         {% for message in get_flashed_messages() %}
